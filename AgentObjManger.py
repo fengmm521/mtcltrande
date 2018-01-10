@@ -14,7 +14,7 @@ import timetool
 #强化学习智能体,包含蒙特卡罗搜索树对象，kline数据预处理工具对象，神经网络数据分批分类对象
 class AgentObj(object):
     """docstring for KlineNNTool"""
-    def __init__(self, nnconfigflie,treepth,nnpth):
+    def __init__(self, nnconfigflie,treepth,nnpth,basemoney = 10):
 
         self.nnObj = None                #神经网络分类对象
 
@@ -25,6 +25,19 @@ class AgentObj(object):
         self.treeSavePth = treepth       #树参数保存路径
 
         self.nnSavePth = nnpth           #神经网络分类对象保存路径
+
+
+        self.baseMoney = 10             #初始资源，以资产值记入
+
+        self.lastPrice = 0.0            #当前资产单位价格
+
+        self.trandeLeverage = 10        #交易杠杆倍率
+
+        self.makerFee = 0.00015         #make交易手续费
+        self.takerFee = 0.00015         #taker交易手续费
+
+        self.oneTradeMoney = 10         #每张合约价值为多少美元
+
 
         self.initObj()
 
