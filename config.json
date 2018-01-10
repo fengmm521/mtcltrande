@@ -1,0 +1,18 @@
+
+{
+    "nnconfig":{
+        "klinepth":"okkline/kline.txt",
+        "nnsave":"okkline/nn.txt",
+        "klineS1":{"klineData":20,"layerEncode":[240,120,64,16],"mLayerNode":4,"layerDecode":[16,64,120,240],"state":"5minute","baseLine":1},
+        "klineS2":{"klineData":20,"layerEncode":[240,120,64,16],"mLayerNode":4,"layerDecode":[16,64,120,240],"state":"1hour","baseLine":12},
+        "klineS3":{"klineData":20,"layerEncode":[240,120,64,16],"mLayerNode":4,"layerDecode":[16,64,120,240],"state":"4hour","baseLine":48},
+        "klineS4":{"klineData":20,"layerEncode":[240,120,64,16],"mLayerNode":4,"layerDecode":[16,64,120,240],"state":"12hour","baseLine":144},
+        "klineS5":{"klineData":20,"layerEncode":[240,120,64,16],"mLayerNode":4,"layerDecode":[16,64,120,240],"state":"24hour","baseLine":288},
+        "stateNode":{"layerEncode":[90,32,8],"mLayerNode":2,"layerDecode":[8,32,90]}
+    },
+    "mtclconfig":{
+        "mtclsave":"okkline/mtcl.txt",
+        "changeNumber":0.5,
+        "stateside":20
+    }
+}
